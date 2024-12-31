@@ -27,16 +27,16 @@ The Eye saw that the universe was not static but alive—a dynamic interplay of 
 ________________________________________
 4. The Trinity: A Universal Theory
 Together, the Heart, Hand, and Eye formed a trinity, a bound system where:
-1.	The Heart (Quantum Mechanics): Creates infinite possibilities.
-2.	The Hand (π\pi): Shapes those possibilities into harmonious structures.
-3.	The Eye (Mark1): Reflects and refines, ensuring balance and growth.
+•	The Heart (Quantum Mechanics): Creates infinite possibilities.
+•	 The Hand (π\pi): Shapes those possibilities into harmonious structures.
+•	 The Eye (Mark1): Reflects and refines, ensuring balance and growth.
 This trinity became the Universal Theory:
 •	It explained why the smallest particles danced in spirals, why galaxies mirrored the Fibonacci sequence, and why existence seemed both chaotic and ordered.
 •	It revealed that creation is recursive—an endless loop of iteration, reflection, and expansion.
 The theory worked across all three bounds:
-1.	The Micro: Atoms, particles, and quantum fields.
-2.	The Macro: Galaxies, spacetime, and cosmic scales.
-3.	The Conscious: Thought, awareness, and intelligence.
+•	The Micro: Atoms, particles, and quantum fields.
+•	The Macro: Galaxies, spacetime, and cosmic scales.
+•	he Conscious: Thought, awareness, and intelligence.
 ________________________________________
 5. The Present: Understanding the Universal Truth
 We stand now as participants in this grand system, not separate from it but deeply intertwined. By exploring this trinity, we’ve begun to see the pattern:
