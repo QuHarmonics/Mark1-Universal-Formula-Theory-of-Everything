@@ -1,3 +1,6 @@
+# **Avalanches Through the Lens of Mark1: A Quantum-Harmonic Exploration**
+
+---
 
 ## **Abstract**
 
@@ -19,40 +22,36 @@ Avalanches represent complex systems where micro-level interactions lead to macr
 
 ### **2.1 Recursive Reflection of Energy**
 Energy propagation in avalanches follows recursive feedback loops:
-R_(n+1) = R_n * delta
-
-markdown
-Copy code
+$$
+R_{n+1} = R_n \cdot \delta
+$$
 Where:
-- `R_(n+1)`: Recursive energy at iteration `n+1`.
-- `R_n`: Recursive energy at iteration `n`.
-- `delta`: Amplification factor.
+- \( R_{n+1} \): Recursive energy at iteration \( n+1 \),
+- \( R_n \): Recursive energy at iteration \( n \),
+- \( \delta \): Amplification factor.
 
 ### **2.2 Quantum Pull and Collapse**
 Avalanches are triggered when external forces disrupt latent potential energy:
-R_trigger = T * beta
-
-markdown
-Copy code
+$$
+R_{\text{trigger}} = T \cdot \beta
+$$
 Where:
-- `R_trigger`: Reflected energy from the trigger.
-- `T`: Trigger force (e.g., weight or vibrations).
-- `beta`: Snowpack harmonic response coefficient.
+- \( R_{\text{trigger}} \): Reflected energy from the trigger,
+- \( T \): Trigger force (e.g., weight or vibrations),
+- \( \beta \): Snowpack harmonic response coefficient.
 
 ### **2.3 Turbulence as Amplification**
 Turbulence arises from deviations between consecutive energy reflections:
-T_n = |R_n - R_(n-1)|
-
-csharp
-Copy code
+$$
+T_n = |R_n - R_{n-1}|
+$$
 Significant turbulence occurs when:
-T_n > gamma
-
-yaml
-Copy code
+$$
+T_n > \gamma
+$$
 Where:
-- `T_n`: Turbulence magnitude.
-- `gamma`: Harmonic stability threshold.
+- \( T_n \): Turbulence magnitude,
+- \( \gamma \): Harmonic stability threshold.
 
 ---
 
@@ -60,41 +59,37 @@ Where:
 
 ### **3.1 Initiation (Trigger and Reflection)**
 Avalanches begin with external disturbances creating localized harmonic imbalances:
-R_trigger = T * beta
-
-markdown
-Copy code
+$$
+R_{\text{trigger}} = T \cdot \beta
+$$
 
 ### **3.2 Recursive Amplification**
 Energy reflections propagate recursively:
-R_(n+1) = R_n * (delta - lambda * n)
-
-markdown
-Copy code
+$$
+R_{n+1} = R_n \cdot (\delta - \lambda \cdot n)
+$$
 Where:
-- `lambda`: Harmonic decay constant.
+- \( \lambda \): Harmonic decay constant.
 
 ### **3.3 Turbulence Detection**
 Turbulence amplifies instability when:
-T_n > gamma
-
-csharp
-Copy code
+$$
+T_n > \gamma
+$$
 
 ### **3.4 Stabilization**
 Stability is achieved when:
-R_n < R_0 * delta
-
-yaml
-Copy code
+$$
+R_{n} < R_0 \cdot \delta
+$$
 
 ---
 
 ## **4. Recursive Avalanche Simulation**
 
 ### **Simulation Parameters**
-1. `T = 10.0`, `beta = 1.0`, `delta = 1.1`, `gamma = 1.2`, `lambda = 0.05`.
-2. Initial reflected energy `R_0 = 10.0`.
+1. \( T = 10.0 \), \( \beta = 1.0 \), \( \delta = 1.1 \), \( \gamma = 1.2 \), \( \lambda = 0.05 \),
+2. Initial reflected energy \( R_0 = 10.0 \).
 
 ### **Results Table**
 | Iteration | Reflected Energy \(R_n\) | Turbulence Magnitude \(T_n\) | Stability         |
@@ -111,24 +106,21 @@ Copy code
 
 ### **5.1 Recursive Dynamics**
 Recursive energy reflections drive propagation. Amplification ceases when:
-R_(n+1) < R_n
-
-markdown
-Copy code
+$$
+R_{n+1} < R_n
+$$
 
 ### **5.2 Turbulence Amplification**
 Turbulence peaks signal harmonic misalignment:
-T_n = |R_n - R_(n-1)|
-
-csharp
-Copy code
+$$
+T_n = |R_n - R_{n-1}|
+$$
 
 ### **5.3 Harmonic Realignment**
 Stabilization occurs when recursive reflections align with snowpack harmonics:
-R_n ≈ H * sin(n)
-
-yaml
-Copy code
+$$
+R_n \approx H \cdot \sin(n)
+$$
 
 ---
 
@@ -155,15 +147,13 @@ This thesis redefines avalanche dynamics through the **Mark1 Framework**, unitin
 
 ### **Appendix A: Formulas**
 1. Recursive Reflection:
-R_(n+1) = R_n * (delta - lambda * n)
-
-markdown
-Copy code
+$$
+R_{n+1} = R_n \cdot (\delta - \lambda \cdot n)
+$$
 2. Turbulence:
-T_n = |R_n - R_(n-1)|
-
-yaml
-Copy code
+$$
+T_n = |R_n - R_{n-1}|
+$$
 
 ### **Appendix B: Visualizations**
 Include Python scripts for:
@@ -171,3 +161,8 @@ Include Python scripts for:
 2. Stability and turbulence heatmaps.
 
 ---
+
+### Notes:
+1. To render equations on GitHub, enable MathJax or use GitHub Pages with Jekyll and MathJax support.
+2. If LaTeX rendering is unavailable, consider converting formulas to inline code or images.
+
