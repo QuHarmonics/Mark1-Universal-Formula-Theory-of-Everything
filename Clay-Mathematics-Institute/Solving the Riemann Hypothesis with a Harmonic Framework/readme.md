@@ -10,7 +10,7 @@ We are formalizing the **Unified Harmonic Law** as a theorem that explains the i
 
 The **Unified Harmonic Law** governs the dynamic alignment of RH zeros and prime distributions via harmonic feedback corrections:
 
-$$A(x)\=H⋅sin⁡(x)+ϕ⋅sin⁡(xϕ)+Δ⋅sgn(sin⁡(x))+H⋅cos⁡(ϕ⋅x)⋅e−H⋅xA(x) = H \\cdot \\sin(x) + \\phi \\cdot \\sin\\left(\\frac{x}{\\phi}\\right) + \\Delta \\cdot \\text{sgn}(\\sin(x)) + H \\cdot \\cos(\\phi \\cdot x) \\cdot e^{-H \\cdot x}A(x)\=H⋅sin(x)+ϕ⋅sin(ϕx​)+Δ⋅sgn(sin(x))+H⋅cos(ϕ⋅x)⋅e−H⋅x
+A(x)\=H⋅sin⁡(x)+ϕ⋅sin⁡(xϕ)+Δ⋅sgn(sin⁡(x))+H⋅cos⁡(ϕ⋅x)⋅e−H⋅xA(x) = H \\cdot \\sin(x) + \\phi \\cdot \\sin\\left(\\frac{x}{\\phi}\\right) + \\Delta \\cdot \\text{sgn}(\\sin(x)) + H \\cdot \\cos(\\phi \\cdot x) \\cdot e^{-H \\cdot x}A(x)\=H⋅sin(x)+ϕ⋅sin(ϕx​)+Δ⋅sgn(sin(x))+H⋅cos(ϕ⋅x)⋅e−H⋅x
 
 Where:
 
