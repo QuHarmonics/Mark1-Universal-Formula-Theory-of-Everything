@@ -14,9 +14,9 @@ The Riemann Hypothesis postulates that all non-trivial zeros of the Riemann zeta
 ### **2. The Refined Formula**
 The formula is given by:
 
-$$
+```math
 H(n) = H(n-1) \cdot (-0.5) \cdot \cos\left(\frac{n}{\pi}\right) + \alpha \cdot \frac{\text{Target} - H(n-1)}{n+1}
-$$
+```
 
 Where:
 1. $H(n)$: Sequence value at iteration $n$.
@@ -29,26 +29,26 @@ Where:
 Let $H(0) = 0.5$, $\alpha = 1.5$, and $\text{Target} = 0.5$:
 
 - **Iteration 1**:
-  $$
+  ```math
   H(1) = H(0) \cdot (-0.5) \cdot \cos\left(\frac{1}{\pi}\right) + 1.5 \cdot \frac{(0.5 - H(0))}{2}
-  $$
-  $$
+  ```
+  ```math
   H(1) \approx 0.5 \cdot (-0.5) \cdot 0.318 + 1.5 \cdot \frac{(0)}{2} = -0.0795
-  $$
+  ```
 - **Iteration 2**:
-  $$
+  ```math
   H(2) = H(1) \cdot (-0.5) \cdot \cos\left(\frac{2}{\pi}\right) + 1.5 \cdot \frac{(0.5 - H(1))}{3}
-  $$
-  $$
+  ```
+  ```math
   H(2) \approx -0.0795 \cdot (-0.5) \cdot 0.636 + 1.5 \cdot \frac{(0.5795)}{3} \approx 0.1037
-  $$
+  ```
 - **Iteration 3**:
-  $$
+  ```math
   H(3) = H(2) \cdot (-0.5) \cdot \cos\left(\frac{3}{\pi}\right) + 1.5 \cdot \frac{(0.5 - H(2))}{4}
-  $$
-  $$
+  ```
+  ```math
   H(3) \approx 0.1037 \cdot (-0.5) \cdot 0.955 + 1.5 \cdot \frac{(0.3963)}{4} \approx 0.1733
-  $$
+  ```
 
 ---
 
@@ -60,17 +60,17 @@ Let $H(0) = 0.5$, $\alpha = 1.5$, and $\text{Target} = 0.5$:
 
 #### **3.2 Convergence**
 1. Define the deviation from the target as:
-   $$
+   ```math
    \epsilon_n = \text{Target} - H(n)
-   $$
+   ```
 2. Substitute into the formula:
-   $$
+   ```math
    \epsilon_{n+1} = \epsilon_n \cdot (-0.5) \cdot \cos\left(\frac{n}{\pi}\right) - \frac{\epsilon_n}{n+1}
-   $$
+   ```
 3. The term $\frac{\epsilon_n}{n+1}$ approaches zero as $n \to \infty$, ensuring:
-   $$
+   ```math
    \epsilon_n \to 0 \quad \text{as} \quad n \to \infty
-   $$
+   ```
 4. Thus, $H(n)$ converges to the target value $\text{Target} = 0.5$.
 
 ---
@@ -96,9 +96,9 @@ The formula remains stable and convergent under extreme conditions.
 
 #### **5.1 Riemann Hypothesis**
 The formula aligns all non-trivial zeros of $\zeta(s)$ along $\Re(s) = 0.5$:
-$$
+```math
 \forall \gamma_n, \Re(s_n) = 0.5 \quad \text{where} \quad \zeta(s_n) = 0
-$$
+```
 
 #### **5.2 Universality**
 The refined formula applies to:
@@ -128,16 +128,6 @@ sequenceDiagram
 #### **6.2 Long-Term Stability**
 After 1 billion iterations, the sequence stabilizes to:
 - $H(n) \approx 0.5$
-
----
-
-### **7. Next Steps**
-1. **Formal Publication**:
-   - Prepare a peer-reviewed paper documenting the formula, proof, and results.
-2. **Domain Applications**:
-   - Test in quantum mechanics, cryptography, and cosmology.
-3. **Expand to Higher Dimensions**:
-   - Simulate harmonic feedback in 3D and higher-dimensional lattices.
 
 ---
 
