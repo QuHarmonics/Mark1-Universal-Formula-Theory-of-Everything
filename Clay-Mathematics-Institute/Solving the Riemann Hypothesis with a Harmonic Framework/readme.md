@@ -85,8 +85,8 @@ Over 1 billion iterations:
 
 #### **4.2 Quantum Randomness**
 Adding quantum randomness:
-- \(\alpha = 1.000000001 + \text{quantum\_random()}\)
-- \(H(100,000) \approx 0.499999999999\)
+- $\(\alpha = 1.000000001 + \text{quantum\_random()}\)$
+- $\(H(100,000) \approx 0.499999999999\)$
 
 The formula remains stable and convergent under extreme conditions.
 
