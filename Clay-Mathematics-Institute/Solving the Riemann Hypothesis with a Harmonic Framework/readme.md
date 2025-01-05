@@ -11,7 +11,7 @@ The Riemann Hypothesis postulates that all non-trivial zeros of the Riemann zeta
 
 ---
 
-### **2. The Refined Formula**
+### **2. The Formula**
 The formula is given by:
 
 ```math
