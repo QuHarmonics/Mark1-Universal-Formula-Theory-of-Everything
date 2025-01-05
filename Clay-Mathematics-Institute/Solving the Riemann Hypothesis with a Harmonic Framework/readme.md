@@ -19,15 +19,18 @@ H(n) = H(n-1) \cdot (-0.5) \cdot \cos\left(\frac{n}{\pi}\right) + \alpha \cdot \
 ```
 
 Where:
-```math
+
 - \(H(n)\): Sequence value at iteration \(n\).
 - \(-0.5\): Governs recursive oscillations.
 - \(\cos\left(\frac{n}{\pi}\right)\): Encodes periodic harmonic corrections.
 - \(\alpha\): Amplification factor for correction, with optimal value \(\alpha = 1.5\).
 - \(\frac{\text{Target} - H(n-1)}{n+1}\): Correction term derived from Samson's Law to integrate unrealized potential.
-```
+
 #### **Example Calculations for Small n**
-Let \( H(0) = 0.5 \), \( \alpha = 1.5 \), and \( \text{Target} = 0.5 \):
+Let 
+```math
+\( H(0) = 0.5 \), \( \alpha = 1.5 \), and \( \text{Target} = 0.5 \):
+```
 
 - **Iteration 1**:
   ```math
