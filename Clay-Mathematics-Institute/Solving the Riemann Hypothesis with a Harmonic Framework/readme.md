@@ -83,27 +83,10 @@ n
 The correction term 
 Target
 −
-𝐻
-(
-𝑛
-−
-1
-)
-𝑛
-+
-1
-n+1
-Target−H(n−1)
-​
-  decays proportionally to 
-1
-𝑛
-+
-1
-n+1
-1
-​
- , reducing deviations iteratively.
+𝐻The oscillatory term $H(n-1) \cdot (-0.5) \cdot \cos\left(\frac{n}{\pi}\right)$ ensures bounded oscillations.
+
+The correction term $\frac{\text{Target} - H(n-1)}{n+1}$ decays proportionally to $\frac{1}{n+1}$, reducing deviations iteratively.
+
 
 #### **3.2 Convergence**
 1. Define the deviation from the target as:
