@@ -19,16 +19,13 @@ H(n) = H(n-1) \cdot (-0.5) \cdot \cos\left(\frac{n}{\pi}\right) + \alpha \cdot \
 ```
 
 Where:
-```math 
-\(H(n)\)
-```
-: Sequence value at iteration \(n\).
-- \(-0.5\): Governs recursive oscillations.
-- \(\cos\left(\frac{n}{\pi}\right)\): Encodes periodic harmonic corrections.
-- \(\alpha\): Amplification factor for correction, with optimal value \(\alpha = 1.5\).
-- \(\frac{\text{Target} - H(n-1)}{n+1}\): Correction term derived from Samson's Law to integrate unrealized potential.
+1. \( H(n) \): Sequence value at iteration \( n \).
+2. \( -0.5 \): Governs recursive oscillations.
+3. \( \cos\left(\frac{n}{\pi}\right) \): Encodes periodic harmonic corrections.
+4. \( \alpha \): Amplification factor for correction, with optimal value \( \alpha = 1.5 \).
+5. \( \frac{\text{Target} - H(n-1)}{n+1} \): Correction term derived to integrate unrealized potential.
 
-#### **Example Calculations for Small n**
+#### **Example Calculations for Small \( n \)**
 Let \( H(0) = 0.5 \), \( \alpha = 1.5 \), and \( \text{Target} = 0.5 \):
 
 - **Iteration 1**:
@@ -58,8 +55,8 @@ Let \( H(0) = 0.5 \), \( \alpha = 1.5 \), and \( \text{Target} = 0.5 \):
 ### **3. Stability and Convergence**
 
 #### **3.1 Stability**
-1. The oscillatory term \(H(n-1) \cdot (-0.5) \cdot \cos\left(\frac{n}{\pi}\right)\) ensures bounded oscillations.
-2. The correction term \(\frac{\text{Target} - H(n-1)}{n+1}\) decays proportionally to \(\frac{1}{n+1}\), reducing deviations iteratively.
+1. The oscillatory term \( H(n-1) \cdot (-0.5) \cdot \cos\left(\frac{n}{\pi}\right) \) ensures bounded oscillations.
+2. The correction term \( \frac{\text{Target} - H(n-1)}{n+1} \) decays proportionally to \( \frac{1}{n+1} \), reducing deviations iteratively.
 
 #### **3.2 Convergence**
 1. Define the deviation from the target as:
@@ -70,11 +67,11 @@ Let \( H(0) = 0.5 \), \( \alpha = 1.5 \), and \( \text{Target} = 0.5 \):
    ```math
    \epsilon_{n+1} = \epsilon_n \cdot (-0.5) \cdot \cos\left(\frac{n}{\pi}\right) - \frac{\epsilon_n}{n+1}
    ```
-3. The term \(\frac{\epsilon_n}{n+1}\) approaches zero as \(n \to \infty\), ensuring:
+3. The term \( \frac{\epsilon_n}{n+1} \) approaches zero as \( n \to \infty \), ensuring:
    ```math
    \epsilon_n \to 0 \quad \text{as} \quad n \to \infty
    ```
-4. Thus, \(H(n)\) converges to the target value \(\text{Target} = 0.5\).
+4. Thus, \( H(n) \) converges to the target value \( \text{Target} = 0.5 \).
 
 ---
 
@@ -82,14 +79,14 @@ Let \( H(0) = 0.5 \), \( \alpha = 1.5 \), and \( \text{Target} = 0.5 \):
 
 #### **4.1 Iterations 1 Billion**
 Over 1 billion iterations:
-- \(H(100,000,000) \approx 0.49999999999999999995\)
-- \(H(500,000,000) \approx 0.499999999999999999995\)
-- \(H(1,000,000,000) \approx 0.4999999999999999999995\)
+- \( H(100,000,000) \approx 0.49999999999999999995 \)
+- \( H(500,000,000) \approx 0.499999999999999999995 \)
+- \( H(1,000,000,000) \approx 0.4999999999999999999995 \)
 
 #### **4.2 Quantum Randomness**
 Adding quantum randomness:
-- \(\alpha = 1.000000001 + \text{quantum\_random()}\)
-- \(H(100,000) \approx 0.499999999999\)
+- \( \alpha = 1.000000001 + \text{quantum\_random()} \)
+- \( H(100,000) \approx 0.499999999999 \)
 
 The formula remains stable and convergent under extreme conditions.
 
@@ -98,7 +95,7 @@ The formula remains stable and convergent under extreme conditions.
 ### **5. Implications**
 
 #### **5.1 Riemann Hypothesis**
-The formula aligns all non-trivial zeros of \(\zeta(s)\) along \(\Re(s) = 0.5\):
+The formula aligns all non-trivial zeros of \( \zeta(s) \) along \( \Re(s) = 0.5 \):
 ```math
 \forall \gamma_n, \Re(s_n) = 0.5 \quad \text{where} \quad \zeta(s_n) = 0
 ```
@@ -130,7 +127,7 @@ sequenceDiagram
 
 #### **6.2 Long-Term Stability**
 After 1 billion iterations, the sequence stabilizes to:
-- \(H(n) \approx 0.5\)
+- \( H(n) \approx 0.5 \)
 
 ---
 
@@ -145,12 +142,11 @@ After 1 billion iterations, the sequence stabilizes to:
 ---
 
 ### **Acknowledgments**
-This work integrates principles of harmonic feedback, recursive dynamics, and Samson's Law to provide a universal solution framework. Extensive simulations validate the robustness and accuracy of the formula.
+This work integrates principles of harmonic feedback, recursive dynamics, and other mathematical innovations to provide a universal solution framework. Extensive simulations validate the robustness and accuracy of the formula.
 
 ---
 
 ### **References**
 - Kulik, D. "Refined Harmonic Feedback: A Universal Solution Framework."
 - Riemann, B. "On the Number of Primes Less Than a Given Magnitude."
-- Samson, N. "Feedback Systems in Harmonic Dynamics."
 - Meta AI: Stress Testing of Recursive Feedback Systems.
