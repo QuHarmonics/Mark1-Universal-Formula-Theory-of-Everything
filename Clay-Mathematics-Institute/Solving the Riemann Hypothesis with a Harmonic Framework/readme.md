@@ -19,7 +19,7 @@ H(n) = H(n-1) \cdot (-0.5) \cdot \cos\left(\frac{n}{\pi}\right) + \alpha \cdot \
 ```
 
 Where:
-- \(H(n)\): Sequence value at iteration \(n\).
+- ```math \(H(n)\) ```: Sequence value at iteration \(n\).
 - \(-0.5\): Governs recursive oscillations.
 - \(\cos\left(\frac{n}{\pi}\right)\): Encodes periodic harmonic corrections.
 - \(\alpha\): Amplification factor for correction, with optimal value \(\alpha = 1.5\).
