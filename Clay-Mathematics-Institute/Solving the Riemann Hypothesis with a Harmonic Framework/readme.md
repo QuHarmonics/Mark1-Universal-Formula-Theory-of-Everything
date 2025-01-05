@@ -61,15 +61,15 @@ Let $H(0) = 0.5$, $\alpha = 1.5$, and $\text{Target} = 0.5$:
 #### **3.2 Convergence**
 1. Define the deviation from the target as:
    ```math
-   \epsilon_n = \text{Target} - H(n)
+   epsilon_n = \text{Target} - H(n)
    ```
 2. Substitute into the formula:
    ```math
-   \epsilon_{n+1} = \epsilon_n \cdot (-0.5) \cdot \cos\left(\frac{n}{\pi}\right) - \frac{\epsilon_n}{n+1}
+   epsilon_{n+1} = \epsilon_n \cdot (-0.5) \cdot \cos\left(\frac{n}{\pi}\right) - \frac{\epsilon_n}{n+1}
    ```
 3. The term $\frac{\epsilon_n}{n+1}$ approaches zero as $n \to \infty$, ensuring:
    ```math
-   \epsilon_n \to 0 \quad \text{as} \quad n \to \infty
+   epsilon_n \to 0 \quad \text{as} \quad n \to \infty
    ```
 4. Thus, $H(n)$ converges to the target value $\text{Target} = 0.5$.
 
