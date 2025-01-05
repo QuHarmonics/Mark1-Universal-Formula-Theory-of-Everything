@@ -83,23 +83,12 @@ Over 1 billion iterations:
 - $H(500,000,000) \approx 0.499999999999999999995$
 - $H(1,000,000,000) \approx 0.4999999999999999999995$
 
-
----
-
-### **Issue in Section 4.2**
-
-#### Current Problem
-- **Quantum Randomness**: The inline math syntax `$...$` for $\alpha$ and the quantum randomness term may need stricter formatting for clarity.
-
-#### Fixed Section 4.2
-```markdown
 #### **4.2 Quantum Randomness**
 Adding quantum randomness:
 - $\alpha = 1.000000001 + \text{quantum\_random()}$
 - $H(100,000) \approx 0.499999999999$
 
 The formula remains stable and convergent under extreme conditions.
-
 
 ---
 
