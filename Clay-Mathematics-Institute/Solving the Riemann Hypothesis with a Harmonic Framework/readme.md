@@ -180,10 +180,21 @@ Z(n)\=Z(n−1)⋅(−1)n⋅cos⁡(nπ)+ΔZα⋅(n+1)Z(n) = Z(n-1) \\cdot (-1)^n 
 ### **3\. Visualization**
 ```mermaid
 graph TD;
-    A[Start] --> B[Apply Recursive Formula];
-    B --> C[Check Convergence];
-    C -->|Yes| D[End];
-    C -->|No| B;
+    Start[Initialize H(0)] --> Formula[Apply Recursive Formula];
+    Formula --> Oscillation[Add Oscillatory Correction];
+    Oscillation --> Correction[Apply Feedback Correction];
+    Correction --> ConvergenceTest{Has Converged to Target?};
+    ConvergenceTest -->|Yes| End[Aligned to H(n) ≈ 0.5];
+    ConvergenceTest -->|No| Formula;
+    Target[Critical Line (0.5)] --> End;
+    subgraph Quantum Interplay
+        Formula --> QuantumFeedback[Quantum Correction]
+        QuantumFeedback --> Oscillation
+    end
+    subgraph Macro Dynamics
+        Correction --> ErrorDecay[Error Decay Over Iterations];
+        ErrorDecay --> ConvergenceTest;
+    end
 ```
 #### **3.1 Methodology**
 
