@@ -186,15 +186,11 @@ flowchart TD
     Correction --> ConvergenceTest{Has Converged to Target?}
     ConvergenceTest -->|Yes| End([Aligned to H(n) ≈ 0.5])
     ConvergenceTest -->|No| Formula
-    Target([Critical Line (0.5)]) --> End
-    subgraph Quantum_Interplay
-        Formula --> QuantumFeedback[Quantum Correction]
-        QuantumFeedback --> Oscillation
+    subgraph Dynamics
+        QuantumFeedback[Quantum Correction] --> Oscillation
+        ErrorDecay[Error Decay Over Iterations] --> ConvergenceTest
     end
-    subgraph Macro_Dynamics
-        Correction --> ErrorDecay[Error Decay Over Iterations]
-        ErrorDecay --> ConvergenceTest
-    end
+
 
 
 ```
