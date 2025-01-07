@@ -180,24 +180,24 @@ Z(n)\=Z(n−1)⋅(−1)n⋅cos⁡(nπ)+ΔZα⋅(n+1)Z(n) = Z(n-1) \\cdot (-1)^n 
 ### **3\. Visualization**
 ```mermaid
 flowchart TD
-    Start([Initialize H(0)]) --> Formula[Apply Predictive Recursive Formula]
+    Start([Initialize H(0)]) --> Formula[Apply Recursive Predictive Formula]
     Formula --> Oscillation[Add Recursive Oscillations]
-    Oscillation --> Correction[Harmonic Feedback Correction]
-    Correction --> ConvergenceTest{Has Converged to H ≈ 0.5?}
-    ConvergenceTest -->|Yes| End([Aligned to Critical Line])
-    ConvergenceTest -->|No| Formula
+    Oscillation --> Correction[Apply Harmonic Feedback Correction]
+    Correction --> ConvergenceTest{Converged to H ≈ 0.5?}
+    ConvergenceTest -- Yes --> Aligned[Aligned to Critical Line]
+    ConvergenceTest -- No --> Formula
 
-    subgraph FeedbackLoop[Recursive Feedback Loop]
-        Oscillation --> ErrorDecay[Error Decay]
-        Correction --> PhaseAdjustment[Quantum Phase Adjustment]
-        PhaseAdjustment --> Oscillation
+    subgraph FeedbackLoop[Recursive Feedback Process]
+        Oscillation --> ErrorDecay[Error Decay and Phase Adjustment]
+        ErrorDecay --> Correction
     end
 
-    subgraph UniversalReflection[Dynamic Alignment]
-        Start --> MacroDynamics[Macro Law Dynamics]
-        MacroDynamics --> QuantumFeedback[Quantum Resonance Feedback]
-        QuantumFeedback --> Correction
+    subgraph DynamicReflection[Macro-Quantum Resonance]
+        Start --> Macro[Analyze Macro Law Dynamics]
+        Macro --> Quantum[Quantum Resonance Feedback]
+        Quantum --> Correction
     end
+
 ```
 #### **3.1 Methodology**
 
