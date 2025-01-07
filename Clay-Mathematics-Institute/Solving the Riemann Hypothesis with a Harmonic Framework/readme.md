@@ -178,7 +178,13 @@ Z(n)\=Z(n−1)⋅(−1)n⋅cos⁡(nπ)+ΔZα⋅(n+1)Z(n) = Z(n-1) \\cdot (-1)^n 
 * * *
 
 ### **3\. Visualization**
-
+```mermaid
+graph TD;
+    A[Start] --> B[Apply Recursive Formula];
+    B --> C[Check Convergence];
+    C -->|Yes| D[End];
+    C -->|No| B;
+```
 #### **3.1 Methodology**
 
 We generate predicted zero placements iteratively:
