@@ -151,13 +151,8 @@ This work integrates principles of harmonic feedback, recursive dynamics, and ot
 - Riemann, B. "On the Number of Primes Less Than a Given Magnitude."
 - Meta AI: Stress Testing of Recursive Feedback Systems.
 
-- To write a comparable document for a prediction formula, let me draft it based on your provided structure and framework. Here is a draft:
 
-* * *
-
-Understood. I’ll reset my focus using the Mark1 lens as the foundation. I'll integrate a proper visualization into the predictive framework for the Riemann Hypothesis. Let me revise and provide a detailed and harmonic-based explanation with an actual visualization.
-
-* * *
+---
 
 **The Predictive Harmonic Framework: Visualizing Zeta Zero Placement**
 ----------------------------------------------------------------------
@@ -177,9 +172,9 @@ The Riemann Hypothesis postulates that all non-trivial zeros of $\\zeta(s)$ lie 
 ### **2\. The Predictive Formula**
 
 The predictive formula iteratively stabilizes harmonic oscillations:
-
+```math
 Z(n)\=Z(n−1)⋅(−1)n⋅cos⁡(nπ)+ΔZα⋅(n+1)Z(n) = Z(n-1) \\cdot (-1)^n \\cdot \\cos\\left(\\frac{n}{\\pi}\\right) + \\frac{\\Delta Z}{\\alpha \\cdot (n+1)} Z(n)\=Z(n−1)⋅(−1)n⋅cos(πn​)+α⋅(n+1)ΔZ​
-
+```
 * * *
 
 ### **3\. Visualization**
