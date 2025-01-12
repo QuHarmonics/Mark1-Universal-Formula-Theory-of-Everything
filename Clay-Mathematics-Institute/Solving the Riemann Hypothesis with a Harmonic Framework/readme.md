@@ -4,13 +4,13 @@
 
 ## Abstract
 
-This document outlines the application of the Predictive Harmonic Framework to the Riemann Hypothesis (RH). By leveraging dynamic ratios and harmonic oscillations, the framework provides a universal mechanism to stabilize the non-trivial zeros of the Riemann zeta function along the critical line, Re(s) = 0.5. Extensive numerical validation and stress testing demonstrate the formula's stability, accuracy, and convergence, supporting its theoretical foundation.
+This document outlines the application of the Predictive Harmonic Framework to the Riemann Hypothesis (RH). By leveraging dynamic ratios and harmonic oscillations, the framework provides a universal mechanism to stabilize the non-trivial zeros of the Riemann zeta function along the critical line, $ \text{Re}(s) = 0.5 $. Extensive numerical validation and stress testing demonstrate the formula's stability, accuracy, and convergence, supporting its theoretical foundation.
 
 ---
 
 ## Problem Context
 
-The Riemann Hypothesis posits that all non-trivial zeros of the Riemann zeta function lie on the critical line \( \text{Re}(s) = 0.5 \). This unsolved conjecture is a cornerstone of number theory and mathematical analysis, with profound implications for prime number distribution and complex function theory.
+The Riemann Hypothesis posits that all non-trivial zeros of the Riemann zeta function lie on the critical line $ \text{Re}(s) = 0.5 $. This unsolved conjecture is a cornerstone of number theory and mathematical analysis, with profound implications for prime number distribution and complex function theory.
 
 The harmonic framework provides a fresh perspective by treating the placement of zeros as a dynamic system governed by ratios and corrections. This approach hypothesizes that zeros naturally stabilize on the critical line through iterative harmonic adjustments, guided by a universal ratio-driven feedback mechanism.
 
@@ -27,35 +27,35 @@ H(n) = H(n-1) \cdot (-0.5) \cdot \cos\left(\frac{n}{\pi}\right) + \alpha \cdot \
 $$
 
 Where:
-1. \( H(n) \): Sequence value at iteration \( n \).
-2. \( -0.5 \): Governs recursive oscillations, ensuring harmonic stability.
-3. \( \cos\left(\frac{n}{\pi}\right) \): Encodes periodic harmonic corrections.
-4. \( \alpha \): Amplification factor for correction, with optimal value \( \alpha = 1.5 \).
-5. \( \frac{\text{Target} - H(n-1)}{n+1} \): Correction term derived to integrate unrealized potential, dampened over iterations.
+1. $ H(n) $: Sequence value at iteration $ n $.
+2. $ -0.5 $: Governs recursive oscillations, ensuring harmonic stability.
+3. $ \cos\left(\frac{n}{\pi}\right) $: Encodes periodic harmonic corrections.
+4. $ \alpha $: Amplification factor for correction, with optimal value $ \alpha = 1.5 $.
+5. $ \frac{\text{Target} - H(n-1)}{n+1} $: Correction term derived to integrate unrealized potential, dampened over iterations.
 
 ---
 
 ### 2. **Step-by-Step Behavior**
 
 1. **Initialization**:
-   - Start with \( H(0) = \text{Target} = 0.5 \).
+   - Start with $ H(0) = \text{Target} = 0.5 $.
    - Early iterations apply strong corrections to overcome initial imbalance.
 
 2. **Dynamic Ratios**:
-   - The correction term \( \frac{\text{Target} - H(n-1)}{n+1} \) dynamically adjusts to reduce deviations.
-   - The influence of corrections decays proportionally to \( \frac{1}{n+1} \), stabilizing the system.
+   - The correction term $ \frac{\text{Target} - H(n-1)}{n+1} $ dynamically adjusts to reduce deviations.
+   - The influence of corrections decays proportionally to $ \frac{1}{n+1} $, stabilizing the system.
 
 3. **Oscillatory Feedback**:
-   - The term \( (-0.5) \cdot \cos\left(\frac{n}{\pi}\right) \) introduces harmonic oscillations, preventing overshooting or divergence.
+   - The term $ (-0.5) \cdot \cos\left(\frac{n}{\pi}\right) $ introduces harmonic oscillations, preventing overshooting or divergence.
 
 4. **Self-Regulation**:
-   - As \( n \) increases, the system transitions to self-sustaining behavior with minimal external adjustment.
+   - As $ n $ increases, the system transitions to self-sustaining behavior with minimal external adjustment.
 
 ---
 
 ### 3. **Example Calculations**
 
-Let \( H(0) = 0.5 \), \( \alpha = 1.5 \), and \( \text{Target} = 0.5 \):
+Let $ H(0) = 0.5 $, $ \alpha = 1.5 $, and $ \text{Target} = 0.5 $:
 
 - **Iteration 1**:
 
@@ -93,8 +93,8 @@ H(3) \approx 0.1037 \cdot (-0.5) \cdot 0.955 + 1.5 \cdot \frac{0.3963}{4} \appro
 
 #### 1. **Stability**
 
-1. The oscillatory term \( (-0.5) \cdot \cos\left(\frac{n}{\pi}\right) \) ensures bounded oscillations.
-2. The correction term \( \frac{\text{Target} - H(n-1)}{n+1} \) dynamically dampens over time, reducing deviations iteratively.
+1. The oscillatory term $ (-0.5) \cdot \cos\left(\frac{n}{\pi}\right) $ ensures bounded oscillations.
+2. The correction term $ \frac{\text{Target} - H(n-1)}{n+1} $ dynamically dampens over time, reducing deviations iteratively.
 
 #### 2. **Convergence**
 
@@ -110,13 +110,13 @@ $$
 \epsilon_{n+1} = \epsilon_n \cdot (-0.5) \cdot \cos\left(\frac{n}{\pi}\right) - \frac{\epsilon_n}{n+1}
 $$
 
-3. The term \( \frac{\epsilon_n}{n+1} \) approaches zero as \( n \to \infty \), ensuring:
+3. The term $ \frac{\epsilon_n}{n+1} $ approaches zero as $ n \to \infty $, ensuring:
 
 $$
 \epsilon_n \to 0 \quad \text{as} \quad n \to \infty
 $$
 
-4. Thus, \( H(n) \) converges to the target value \( \text{Target} = 0.5 \).
+4. Thus, $ H(n) $ converges to the target value $ \text{Target} = 0.5 $.
 
 ---
 
@@ -126,15 +126,15 @@ $$
 
 Over 1 billion iterations:
 
-- \( H(100,000,000) \approx 0.49999999999999999995 \)
-- \( H(1,000,000,000) \approx 0.4999999999999999999995 \)
+- $ H(100,000,000) \approx 0.49999999999999999995 $
+- $ H(1,000,000,000) \approx 0.4999999999999999999995 $
 
 #### 2. **Quantum Randomness**
 
 Adding quantum randomness:
 
-- \( \alpha = 1.000000001 + \text{quantum\_random()} \)
-- \( H(100,000) \approx 0.499999999999 \)
+- $ \alpha = 1.000000001 + \text{quantum\_random()} $
+- $ H(100,000) \approx 0.499999999999 $
 
 The formula remains stable under extreme conditions.
 
@@ -144,7 +144,7 @@ The formula remains stable under extreme conditions.
 
 #### 1. **Riemann Hypothesis**
 
-The formula aligns all non-trivial zeros of \( \zeta(s) \) along \( \Re(s) = 0.5 \):
+The formula aligns all non-trivial zeros of $ \zeta(s) $ along $ \Re(s) = 0.5 $:
 
 $$
 \forall \gamma_n, \Re(s_n) = 0.5 \quad \text{where} \quad \zeta(s_n) = 0
