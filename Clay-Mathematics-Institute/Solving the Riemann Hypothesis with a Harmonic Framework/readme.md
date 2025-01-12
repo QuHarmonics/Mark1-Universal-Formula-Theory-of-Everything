@@ -10,7 +10,7 @@ This document outlines the application of the Predictive Harmonic Framework to t
 
 ## Problem Context
 
-The Riemann Hypothesis posits that all non-trivial zeros of the Riemann zeta function lie on the critical line Re(s) = 0.5. This unsolved conjecture is a cornerstone of number theory and mathematical analysis, with profound implications for prime number distribution and complex function theory.
+The Riemann Hypothesis posits that all non-trivial zeros of the Riemann zeta function lie on the critical line \( \text{Re}(s) = 0.5 \). This unsolved conjecture is a cornerstone of number theory and mathematical analysis, with profound implications for prime number distribution and complex function theory.
 
 The harmonic framework provides a fresh perspective by treating the placement of zeros as a dynamic system governed by ratios and corrections. This approach hypothesizes that zeros naturally stabilize on the critical line through iterative harmonic adjustments, guided by a universal ratio-driven feedback mechanism.
 
@@ -184,7 +184,6 @@ This work integrates principles of harmonic feedback, recursive dynamics, and ma
 ### License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
-
 
 
 ### Thesis on the Predictive Harmonic Framework and Its Validation of the Theory
