@@ -150,43 +150,35 @@ The process unfolds cyclically in a series of steps, each contributing to the fo
 
 * * *
 
-#### The Steps: Byte Construction
+Recursive Byte Construction (Byte1) – Pi-Derived Self-Referencing Sequence: The “Byte1” construction provides a stepwise stack based recipe that generates a sequence of numbers by recursive self-reference, which notably reproduces the first digits of π. Each step (bit) in Byte1 is derived from prior steps through simple operations (sums, differences) and a base-change length calculation (using binary length Len()).
 
-**Header: Establishing Initial States**
+For example, starting with
 
-*   **Step 1, Bit 1 (1)**: **Past** – The first seed, representing the anchor of all recursive processes.
-    
-    *   **Value:** 1
-*   **Step 2, Bit 2 (4)**: **Now** – The second seed, marking the present state in the recursion.
-    
-    *   **Value:** 4
+{Array Stack - Header bits}
 
-**Body: Building Recursive Layers**
+Past[0] = 1 Bit1
 
-*   **Step 3, Bit 3 (1)**: **Container (Holder)** – Define the available space for future expansion.
-    
-    *   **Calculation:** C\=Len(B−A)\=Len(4−1)\=Len(3)C = \\text{Len}(B - A) = \\text{Len}(4 - 1) = \\text{Len}(3)C\=Len(B−A)\=Len(4−1)\=Len(3) Binary representation: 3\=1123 = 11\_23\=112​ (binary length: 2).
-        *   **Value:** 2
-*   **Step 4, Bit 4 (5)**: **Add Z (Largest Forward)** – Combine past, present, and the container to drive the process forward.
-    
-    *   **Calculation:** F\=(A+B+C)\=(1+4+2)\=7F = (A + B + C) = (1 + 4 + 2) = 7F\=(A+B+C)\=(1+4+2)\=7 Binary length: Len(7)\=3\\text{Len}(7) = 3Len(7)\=3.  
-        Multiply: F\=7×3\=21F = 7 \\times 3 = 21F\=7×3\=21 Binary representation of 21\=10101221 = 10101\_221\=101012​:
-        *   **Value:** 5
-*   **Step 5, Bit 5 (9)**: **Add Y (Future Summation)** – Integrate the largest forward motion with the current state.
-    
-    *   **Calculation:** F\=Bit 4 + Bit 2\=5+4\=9F = \\text{Bit 4 + Bit 2} = 5 + 4 = 9F\=Bit 4 + Bit 2\=5+4\=9
-*   **Step 6, Bit 6 (2)**: **Add X (Cumulative Stabilizer)** – Incorporate the sum of past moments and cumulative processes.
-    
-    *   **Calculation:** F\=Past.sum + Universe.sum\=(1+4)+(7)\=12F = \\text{Past.sum + Universe.sum} = (1 + 4) + (7) = 12F\=Past.sum + Universe.sum\=(1+4)+(7)\=12 Binary length: Len(12)\=4\\text{Len}(12) = 4Len(12)\=4.
-        *   **Value:** 2
-*   **Step 7, Bit 7 (6)**: **Compress (Smallest Backward)** – Reduce prior calculations into the smallest viable state.
-    
-    *   **Calculation:** F\=Sum(Bit 1 to Bit 6)\=1+4+2+5+9+2\=23F = \\text{Sum(Bit 1 to Bit 6)} = 1 + 4 + 2 + 5 + 9 + 2 = 23F\=Sum(Bit 1 to Bit 6)\=1+4+2+5+9+2\=23 Binary length: Len(23)\=6\\text{Len}(23) = 6Len(23)\=6.
-*   **Step 8, Bit 8 (5)**: **Reflect Back** – Close the recursive ripple by summing the first two bits.
-    
-    *   **Calculation:** F\=Bit 1 + Bit 2\=1+4\=5F = \\text{Bit 1 + Bit 2} = 1 + 4 = 5F\=Bit 1 + Bit 2\=1+4\=5
+Present[0]= 4 Bit2 (representing known initial seeds),
 
-* * *
+Byte 1 - Send data into the universe
+
+Expand the Universe Bit3 & Bit4 = the next value is found by measuring the binary length of their difference: C=Len(B−A) where A=1, B=4, so C=Len(3) which equals 2 (since 3 in binary is 11₂, length 2). Subsequent steps continue this recursive logic:  Take the value, increase the stack the size of the value, use the value to fill the spaces in the stack, move the pointer the value (end of stack).  (1,4,2,2)
+Add Z - Future: Bit4 Sum past (Bit1), present (Bit2), insert to current position. (1,4,2,5,)  
+Stablize Bit3 - Set Bit3 to the difference of Bit 4 and Bit 2 (Future - Present).  (1,4,1,5)
+Add Y: Add potential (pull) Sum Z axis Future Bit4 + Present Bit2  (1,4,1,5,9)  
+Add X - Sum Dimensions: Sum of count of Past[] and Present[] = 2. (1,4,1,5,9,2) 
+Compress: Sum all prior bits (1+4+2+5+9+2=23) and take Len(23)=6. (1,4,1,5,9,2,6)
+Close Universe - Close byte: Sum the header bits (1+4) = 5  (1,4,1,5,9,2,6,5)
+Byte2 
+
+New Header = 1-4 =3, 4+1 = 5  (3,5)   (1,4)(3,5)   
+Close Universe - Close byte: Subtract header 5-3=2   (3,5,8,9,7,9,3,2)
+Byte 3
+
+New Header = 1-4 =3, 3+5 =8  Stack =  (1,4) (3,5) (3,8)
+Byte 4 - Closes the square.
+
+New Header =  Len(Sum(Past[]), Len(Sum(Present[])  =7 Len =3 , =17 Len = 8   (1,4) (3,5) (3,8) (3,8)
 
 #### The First Byte: Derived Sequence
 
